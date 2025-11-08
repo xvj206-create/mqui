@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Arte del Maquillaje</title>
+  <style>
+    /* ----- ESTILOS GENERALES ----- */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #030002;
+      color: #ffffff;
+    }
+
+    h1, h2 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ----- PORTADA ----- */
+    .portada {
+      position: relative;
+      text-align: center;
+      color: rgb(12, 1, 1);
+    }
+
+    .portada img {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border: none;
+      display: block;
+    }
+
+    .titulo-portada {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(245, 166, 198, 0.7);
+      padding: 15px 30px;
+      border-radius: 12px;
+      font-size: 2em;
+      font-weight: bold;
+      backdrop-filter: blur(4px);
+    }
+
+    /* ----- CONTENIDO PRINCIPAL ----- */
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #d63384;
+      margin-bottom: 10px;
+      border-left: 5px solid #f5a6c6;
+      padding-left: 10px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .imagenes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .imagenes img {
+      width: 30%;
+      border-radius: 10px;
+    }
+
+    /* ----- PIE DE PÁGINA ----- */
+    footer {
+      background-color: #f5a6c6;
+      color: rgb(3, 1, 2);
+      text-align: center;
+      padding: 25px;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    /* ----- ANIMACIÓN SUAVE AL CARGAR ----- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section, .portada, footer {
+      animation: fadeIn 1.2s ease both;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <div class="portada">
+    <!-- 🔹 Cambia esta imagen por la tuya -->
+    <img src="maquill.jpg" alt="Portada maquillaje">
+    <div class="titulo-portada">El Arte del Maquillaje 💄</div>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section>
+      <h2>1. El maquillaje como forma de expresión</h2>
+      <p>
+        El maquillaje es una herramienta artística que permite expresar emociones, estilos e identidad. 
+        No se trata solo de resaltar la belleza, sino de comunicar quiénes somos. 
+        A través del color y las texturas, cada persona puede reflejar su creatividad y confianza.
+      </p>
+      <div class="imagenes">
+        <img src="Comes-4.jpg" alt="Maquillaje artístico">
+        <img src="Comes-3.jpeg" alt="Maquillaje natural">
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Tendencias modernas del maquillaje</h2>
+      <p>
+        Las tendencias actuales priorizan la naturalidad y el brillo saludable. 
+        Los tonos nude, los delineados gráficos y los acabados luminosos dominan las pasarelas. 
+        Además, el maquillaje inclusivo ha ganado fuerza, mostrando la belleza en todas sus formas y tonos de piel.
+      </p>
+      <div class="imagenes">
+        <img src="mq.webp" alt="Tendencias modernas">
+        <img src="mq2.jpg" alt="Maquillaje con brillo">
+      </div>
+    </section>
+
+    <section>
+      <h2>3. El maquillaje como empoderamiento</h2>
+      <p>
+        Para muchas personas, el maquillaje simboliza poder y decisión. 
+        Es una forma de decir “yo elijo cómo quiero verme”. 
+        Este acto de autoexpresión genera confianza y rompe con los estereotipos impuestos por la sociedad.
+      </p>
+      <div class="imagenes">
+        <img src="vt.jpg" alt="Maquillaje empoderador">
+        <img src="Dior.jpg" alt="Autoconfianza">
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    Génesis Arely Romero 💖
+  </footer>
+
+</body>
+</html>
